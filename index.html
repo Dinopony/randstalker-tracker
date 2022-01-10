@@ -1,0 +1,130 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            * { box-sizing: border-box; }
+
+            html, body {
+                margin: 0;
+                padding: 0;
+                user-select: none;
+            }
+
+            #body {
+                padding: 8px;
+                width: 347px;
+                height: 480px;
+                background: magenta;
+            }
+
+            #body table {
+                width: 100%;
+                text-align: center;
+                table-layout: fixed;
+                margin: auto;
+            }
+
+            .item.obtained img { filter: brightness(1.2); }
+            .item img {
+                filter: brightness(0.4);
+                width: 48x;
+                height: 48px;
+            }
+            
+            .vertical-separator { height: 20px; }
+        </style>
+    </head>
+    <body>
+        <section id="body">
+            <table>
+                <tr>
+                    <td class="item toggleable"><img src="assets/sword_1.gif"></td>
+                    <td class="item toggleable"><img src="assets/sword_2.gif"></td>
+                    <td class="item toggleable"><img src="assets/sword_3.gif"></td>
+                    <td class="item toggleable"><img src="assets/sword_4.gif"></td>
+                    <td></td>
+                    <td class="item toggleable"><img src="assets/lithograph.gif"></td>
+                </tr>
+
+                <tr>
+                    <td class="item toggleable"><img src="assets/armor_1.gif"></td>
+                    <td class="item toggleable"><img src="assets/armor_2.gif"></td>
+                    <td class="item toggleable"><img src="assets/armor_3.gif"></td>
+                    <td class="item toggleable"><img src="assets/armor_4.gif"></td>
+                    <td></td>
+                    <td class="item toggleable"><img src="assets/oracle_stone.gif"></td>
+                </tr>
+
+                <tr>
+                    <td class="item toggleable"><img src="assets/boots_1.gif"></td>
+                    <td class="item toggleable"><img src="assets/boots_2.gif"></td>
+                    <td class="item toggleable"><img src="assets/boots_3.gif"></td>
+                    <td class="item toggleable"><img src="assets/boots_4.gif"></td>
+                    <td></td>
+                    <td class="item toggleable"><img src="assets/bell.gif"></td>
+                </tr>
+
+                <tr>
+                    <td class="item toggleable"><img src="assets/ring_1.gif"></td>
+                    <td class="item toggleable"><img src="assets/ring_2.gif"></td>
+                    <td class="item toggleable"><img src="assets/ring_3.gif"></td>
+                    <td class="item toggleable"><img src="assets/ring_4.gif"></td>
+                    <td></td>
+                    <td class="item toggleable"><img src="assets/statue_jypta.gif"></td>
+                </tr>
+            </table>
+
+            <div class="vertical-separator"></div>
+
+            <table>
+                <tr>
+                    <td class="item toggleable"><img src="assets/idol_stone.gif"></td>
+                    <td class="item toggleable"><img src="assets/safety_pass.gif"></td>
+                    <td class="item toggleable"><img src="assets/armlet.gif"></td>
+                    <td class="item toggleable"><img src="assets/garlic.gif"></td>
+                    <td class="item toggleable"><img src="assets/key.gif"></td>
+                    <td class="item toggleable"><img src="assets/lantern.gif"></td>
+                </tr>
+
+                <tr>
+                    <td class="item toggleable"><img src="assets/einstein_whistle.gif"></td>
+                    <td class="item toggleable"><img src="assets/sun_stone.gif"></td>
+                    <td class="item toggleable"><img src="assets/axe_magic.gif"></td>
+                    <td class="item toggleable"><img src="assets/logs.gif"></td>
+                    <td class="item toggleable"><img src="assets/buyer_card.gif"></td>
+                    <td class="item toggleable"><img src="assets/casino_ticket.gif"></td>
+                </tr>
+            </table>
+
+            <div class="vertical-separator"></div>
+
+            <table>
+                <tr>
+                    <td class="item toggleable"><img src="assets/gola_eye.gif"></td>
+                    <td class="item toggleable"><img src="assets/red_jewel.gif"></td>
+                    <td class="item toggleable"><img src="assets/purple_jewel.gif"></td>
+                    <td class="item toggleable"><img src="assets/green_jewel.gif"></td>
+                    <td class="item toggleable"><img src="assets/blue_jewel.gif"></td>
+                    <td class="item toggleable"><img src="assets/yellow_jewel.gif"></td>
+                </tr>
+                <tr>
+                    <td class=""></td>
+                    <td class=""></td>
+                    <td class=""></td>
+                    <td class="item toggleable"><img src="assets/gola_nail.gif"></td>
+                    <td class="item toggleable"><img src="assets/gola_fang.gif"></td>
+                    <td class="item toggleable"><img src="assets/gola_horn.gif"></td>
+                </tr>
+            </table>
+        </section>
+
+        <script>
+            let items = document.getElementsByClassName('toggleable');
+            for(let item of items) {
+                item.onclick = () => {
+                    item.classList.toggle('obtained');
+                };
+            }
+        </script>
+    </body>
+</html>
